@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CoffeeOne</title>
-    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -15,18 +18,17 @@
 
     <!-- header section -->
     <header class="header">
-        <a href="#" class="logo">
-            <img src="images/logo.png" alt="" />
-        </a>
+        <a href="#" class="logo" aria-label="CoffeeOne"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#c98a45"/><path d="M17 29h26v9a11 11 0 0 1-11 11h-4a11 11 0 0 1-11-11z" fill="#1c110b"/><path d="M43 32h2.5a5 5 0 0 1 0 10H42" fill="none" stroke="#1c110b" stroke-width="3" stroke-linecap="round"/><rect x="13" y="51" width="38" height="3.5" rx="1.75" fill="#1c110b"/><path d="M26 23c-2.4-3.2 2.4-5.2 0-8.5M34 23c-2.4-3.2 2.4-5.2 0-8.5" fill="none" stroke="#1c110b" stroke-width="2.8" stroke-linecap="round"/></svg><span>Coffee<b>One</b></span></a>
 
         <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <a href="#products">products</a>
-            <a href="#review">review</a>
-            <a href="#contact">contact</a>
-            <a href="#blogs">blogs</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#process">Process</a>
+            <a href="#products">Shop</a>
+            <a href="#review">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#blogs">Blog</a>
         </nav>
 
         <div class="icons">
@@ -36,361 +38,352 @@
         </div>
 
         <div class="search-form">
-            <input type="search" id="search-box" placeholder="search gere...">
+            <input type="search" id="search-box" placeholder="Search for a drink or a blend...">
             <label for="search-box" class="fas fa-search"></label>
         </div>
 
         <div class="cart-items-container">
+            <h4>Your cart</h4>
             <div class="cart-item">
-                <span class="fas fa-times"></span>
+                <span class="fas fa-times" aria-label="Remove"></span>
                 <img src="images/cart-item-1.jpg" alt="" />
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">TND 15.50</div>
-                </div>
+                <div class="content"><h3>Espresso beans</h3><div class="price">TND 15.50</div></div>
             </div>
             <div class="cart-item">
-                <span class="fas fa-times"></span>
+                <span class="fas fa-times" aria-label="Remove"></span>
                 <img src="images/cart-item-2.jpg" alt="" />
-                <div class="content">
-                    <h3>cart item 02</h3>
-                    <div class="price">TND 19.95</div>
-                </div>
+                <div class="content"><h3>House blend</h3><div class="price">TND 19.95</div></div>
             </div>
             <div class="cart-item">
-                <span class="fas fa-times"></span>
+                <span class="fas fa-times" aria-label="Remove"></span>
                 <img src="images/cart-item-3.jpg" alt="" />
-                <div class="content">
-                    <h3>cart item 03</h3>
-                    <div class="price">TND 29.99</div>
-                </div>
+                <div class="content"><h3>Dark roast</h3><div class="price">TND 29.99</div></div>
             </div>
             <div class="cart-item">
-                <span class="fas fa-times"></span>
+                <span class="fas fa-times" aria-label="Remove"></span>
                 <img src="images/cart-item-4.jpg" alt="" />
-                <div class="content">
-                    <h3>cart item 04</h3>
-                    <div class="price">TND 35.50</div>
-                </div>
+                <div class="content"><h3>Single origin</h3><div class="price">TND 35.50</div></div>
             </div>
-            <a href="#" class="btn">checkout now</a>
+            <a href="#" class="btn">Checkout now</a>
         </div>
     </header>
 
     <!-- home section -->
-
     <section class="home" id="home">
         <div class="content">
-            <h3>frech coffee in the morning</h3>
-            <p>Enjoy the perfect cup of fresh coffee,
-                crafted just for you. Start your day with us!
-            </p>
-
-            <a href="#" class="btn">get yours now</a>
+            <p class="kicker">Specialty coffee in Monastir</p>
+            <h3>Coffee worth slowing down for.</h3>
+            <p class="lead">Freshly roasted beans, brewed to order by people who care. Pull up a chair, the first cup is on us.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn">See the menu</a>
+                <a href="#about" class="link">Our story <i class="fas fa-arrow-down"></i></a>
+            </div>
         </div>
+
+        <a href="#menu" class="pick">
+            <img src="images/menu-img-3.jpg" alt="Caramel latte" />
+            <div>
+                <small>Most ordered this week</small>
+                <h4>Caramel latte</h4>
+                <b>TND 9.90</b>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+        </a>
     </section>
+
+    <div class="infobar">
+        <div><i class="fas fa-clock"></i><span><b>Open daily</b>7:00 to 21:00</span></div>
+        <div><i class="fas fa-location-dot"></i><span><b>Find us</b>Monastir, Tunisia</span></div>
+        <div><i class="fas fa-mug-hot"></i><span><b>Roasted weekly</b>Always fresh beans</span></div>
+    </div>
 
     <!-- about section -->
-
     <section class="about" id="about">
-        <h1 class="heading"> <span>about</span> us</h1>
         <div class="row">
             <div class="image">
-                <img src="images/about-img.jpg" alt="" />
+                <img src="images/about-img.jpg" alt="Inside CoffeeOne" />
             </div>
             <div class="content">
-                <h3>what makes our coffee special?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nemo possimus eveniet asperiores voluptate quas?
-                    Quaerat, sint quam itaque minus alias placeat impedit
-                    nesciunt nostrum repellat qui eum, hic, nulla aut.
-                </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam, vero recusandae! Quis, odio autem. Earum quam
-                    aperiam ea dolore recusandae laudantium, harum totam facilis?
-                    Amet nemo alias iste in temporibus.
-                </p>
-                <a href="#" class="btn">learn more</a>
+                <h1 class="heading"> About <span>CoffeeOne</span></h1>
+                <h3>What makes our coffee special?</h3>
+                <p>CoffeeOne began with a simple belief: a cup of coffee should be an unhurried moment, not an errand. We choose our beans carefully, roast them in small batches and brew every drink to order.</p>
+                <p>Our baristas know the regulars by name and the regulars know the menu by heart. Whether you stop by for a quick espresso or stay all afternoon with a book, there is always a seat waiting for you.</p>
+                <a href="#menu" class="btn">Explore the menu</a>
             </div>
         </div>
     </section>
 
-    <!-- menu section starts -->
-
+    <!-- menu section -->
     <section class="menu" id="menu">
-        <h1 class="heading"> our <span>menu</span> </h1>
+        <h1 class="heading"> Our <span>menu</span> </h1>
+        <p class="sub">Classic drinks, made properly. Every cup is brewed to order.</p>
         <div class="box-container">
 
             <div class="box">
-                <img src="images/menu-img-1.jpg" alt="" />
-                <h3>tasty and healthy</h3>
-                <div class="price">TND15.99 <span>20.99</span></div>
-                <a href="#" class="btn">add to cart</a>
+                <div class="thumb"><img src="images/menu-img-1.jpg" alt="Espresso" /></div>
+                <div class="info">
+                    <h3>Espresso</h3>
+                    <p>A double shot with a thick, golden crema. Short, strong and honest.</p>
+                    <div class="price">TND 4.50 <span>5.50</span></div>
+                </div>
+                <a href="#" class="add fas fa-plus" aria-label="Add Espresso to cart"></a>
             </div>
-
             <div class="box">
-                <img src="images/menu-img-2.jpg" alt="" />
-                <h3>tasty and healthy</h3>
-                <div class="price">TND15.99 <span>20.99</span></div>
-                <a href="#" class="btn">add to cart</a>
+                <div class="thumb"><img src="images/menu-img-2.jpg" alt="Cappuccino" /></div>
+                <div class="info">
+                    <h3>Cappuccino</h3>
+                    <p>Equal parts espresso, steamed milk and airy foam, dusted with cocoa.</p>
+                    <div class="price">TND 7.50 <span>9.00</span></div>
+                </div>
+                <a href="#" class="add fas fa-plus" aria-label="Add Cappuccino to cart"></a>
             </div>
-
             <div class="box">
-                <img src="images/menu-img-3.jpg" alt="" />
-                <h3>tasty and healthy</h3>
-                <div class="price">TND15.99 <span>20.99</span></div>
-                <a href="#" class="btn">add to cart</a>
+                <div class="thumb"><img src="images/menu-img-3.jpg" alt="Caramel latte" /></div>
+                <div class="info">
+                    <h3>Caramel latte</h3>
+                    <p>Smooth espresso, silky milk and house-made caramel on top.</p>
+                    <div class="price">TND 9.90 <span>11.90</span></div>
+                </div>
+                <a href="#" class="add fas fa-plus" aria-label="Add Caramel latte to cart"></a>
             </div>
-
             <div class="box">
-                <img src="images/menu-img-4.jpg" alt="" />
-                <h3>tasty and healthy</h3>
-                <div class="price">TND15.99 <span>20.99</span></div>
-                <a href="#" class="btn">add to cart</a>
+                <div class="thumb"><img src="images/menu-img-4.jpg" alt="Mocha" /></div>
+                <div class="info">
+                    <h3>Mocha</h3>
+                    <p>Dark chocolate melted into espresso and finished with steamed milk.</p>
+                    <div class="price">TND 9.50 <span>11.50</span></div>
+                </div>
+                <a href="#" class="add fas fa-plus" aria-label="Add Mocha to cart"></a>
             </div>
-
             <div class="box">
-                <img src="images/menu-img-5.jpg" alt="" />
-                <h3>tasty and healthy</h3>
-                <div class="price">TND15.99 <span>20.99</span></div>
-                <a href="#" class="btn">add to cart</a>
+                <div class="thumb"><img src="images/menu-img-5.jpg" alt="Flat white" /></div>
+                <div class="info">
+                    <h3>Flat white</h3>
+                    <p>A velvety double ristretto with a thin layer of micro-foam.</p>
+                    <div class="price">TND 8.50 <span>9.90</span></div>
+                </div>
+                <a href="#" class="add fas fa-plus" aria-label="Add Flat white to cart"></a>
             </div>
-
             <div class="box">
-                <img src="images/menu-img-6.jpg" alt="" />
-                <h3>tasty and healthy</h3>
-                <div class="price">TND15.99 <span>20.99</span></div>
-                <a href="#" class="btn">add to cart</a>
+                <div class="thumb"><img src="images/menu-img-6.jpg" alt="Iced americano" /></div>
+                <div class="info">
+                    <h3>Iced americano</h3>
+                    <p>Espresso over cold water and ice. Clean, crisp and refreshing.</p>
+                    <div class="price">TND 7.90 <span>9.50</span></div>
+                </div>
+                <a href="#" class="add fas fa-plus" aria-label="Add Iced americano to cart"></a>
             </div>
 
         </div>
     </section>
 
-    <!-- products section starts -->
+    <!-- process section -->
+    <section class="process" id="process">
+        <h1 class="heading"> From bean <span>to cup</span> </h1>
+        <div class="steps">
+            <div class="step"><b>1</b><h3>Sourced with care</h3><p>We buy from small farms and pay fair prices, choosing beans for flavor first and volume never.</p></div>
+            <div class="step"><b>2</b><h3>Roasted in small batches</h3><p>Every batch is roasted by hand to bring out sweetness, never bitterness, and ground only when you order.</p></div>
+            <div class="step"><b>3</b><h3>Brewed to order</h3><p>Each cup is made fresh by a trained barista, so what lands on your table is exactly how it should taste.</p></div>
+        </div>
+    </section>
 
+    <!-- products section -->
     <section class="products" id="products">
-        <h1 class="heading"> our <span>products</span> </h1>
+        <h1 class="heading"> Take it <span>home</span> </h1>
+        <p class="sub">Our best-selling beans, roasted this week and ready to brew in your own kitchen.</p>
         <div class="box-container">
             <div class="box">
                 <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-shopping-cart" aria-label="Add to cart"></a>
+                    <a href="#" class="fas fa-heart" aria-label="Favorite"></a>
+                    <a href="#" class="fas fa-eye" aria-label="Quick view"></a>
                 </div>
-                <div class="image">
-                    <img src="images/product-1.jpg" alt="" />
-                </div>
+                <div class="image"><img src="images/product-1.jpg" alt="House blend" /></div>
                 <div class="content">
-                    <h3>fresh coffee</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">TND15.99 <span>20.99</span></div>
+                    <h3>House blend</h3>
+                    <span class="size">250 g of whole beans</span>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <div class="price">TND 24.90 <span>29.90</span></div>
                 </div>
             </div>
             <div class="box">
                 <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-shopping-cart" aria-label="Add to cart"></a>
+                    <a href="#" class="fas fa-heart" aria-label="Favorite"></a>
+                    <a href="#" class="fas fa-eye" aria-label="Quick view"></a>
                 </div>
-                <div class="image">
-                    <img src="images/product-2.jpg" alt="" />
-                </div>
+                <div class="image"><img src="images/product-2.jpg" alt="Dark roast" /></div>
                 <div class="content">
-                    <h3>fresh coffee</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">TND15.99 <span>20.99</span></div>
+                    <h3>Dark roast</h3>
+                    <span class="size">250 g of whole beans</span>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <div class="price">TND 26.50 <span>31.00</span></div>
                 </div>
             </div>
             <div class="box">
                 <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-shopping-cart" aria-label="Add to cart"></a>
+                    <a href="#" class="fas fa-heart" aria-label="Favorite"></a>
+                    <a href="#" class="fas fa-eye" aria-label="Quick view"></a>
                 </div>
-                <div class="image">
-                    <img src="images/product-3.jpg" alt="" />
-                </div>
+                <div class="image"><img src="images/product-3.jpg" alt="Single origin" /></div>
                 <div class="content">
-                    <h3>fresh coffee</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">TND15.99 <span>20.99</span></div>
+                    <h3>Single origin</h3>
+                    <span class="size">250 g of whole beans</span>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <div class="price">TND 32.00 <span>38.00</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- review section starts -->
-
+    <!-- review section -->
     <section class="review" id="review">
-        <h1 class="heading"> customer's <span>review</span> </h1>
+        <h1 class="heading"> Customer <span>reviews</span> </h1>
 
         <div class="box-container">
-
             <div class="box">
                 <img src="images/quote-img.png" alt="" class="quote" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur id similique nesciunt cum beatae alias blanditiis
-                    voluptate, est quam quis quaerat incidunt culpa quae?
-                    Ab eaque consequuntur ex quia et.
-                </p>
-                <img src="images/pic-1.png" alt="" class="user" />
-                <h3>spongebob squarepants</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <p>I come in before my shift every day. The caramel latte is perfect and the staff always greet me with a smile. Best way to start the morning.</p>
+                <div class="who">
+                    <img src="images/pic-1.png" alt="Spongebob Squarepants" class="user" />
+                    <div><h3>Spongebob Squarepants</h3><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div></div>
                 </div>
             </div>
-
             <div class="box">
                 <img src="images/quote-img.png" alt="" class="quote" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur id similique nesciunt cum beatae alias blanditiis
-                    voluptate, est quam quis quaerat incidunt culpa quae?
-                    Ab eaque consequuntur ex quia et.
-                </p>
-                <img src="images/pic-2.png" alt="" class="user" />
-                <h3>patrick star</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <p>I'm not sure what a flat white is, but I've had four this week. Cozy place, friendly people and the pastries disappear fast.</p>
+                <div class="who">
+                    <img src="images/pic-2.png" alt="Patrick Star" class="user" />
+                    <div><h3>Patrick Star</h3><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div></div>
                 </div>
             </div>
-
             <div class="box">
                 <img src="images/quote-img.png" alt="" class="quote" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur id similique nesciunt cum beatae alias blanditiis
-                    voluptate, est quam quis quaerat incidunt culpa quae?
-                    Ab eaque consequuntur ex quia et.
-                </p>
-                <img src="images/pic-3.png" alt="" class="user" />
-                <h3>squidward tentacles</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
+                <p>I came looking for a quiet corner to complain in. The espresso is annoyingly good and the music is soft enough to read by. I'll be back.</p>
+                <div class="who">
+                    <img src="images/pic-3.png" alt="Squidward Tentacles" class="user" />
+                    <div><h3>Squidward Tentacles</h3><div class="stars"><i class="fas fa-star"></i></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- contact section starts -->
-
+    <!-- contact section -->
     <section class="contact" id="contact">
-        <h1 class="heading"> <span>contact</span> us </h1>
+        <h1 class="heading"> Visit or <span>write to us</span> </h1>
         <div class="row">
 
-            <img src="images/contact-1.jpg" alt="">
+            <div class="photo">
+                <img src="images/contact-1.jpg" alt="" />
+                <ul>
+                    <li><i class="fas fa-location-dot"></i> Monastir, Tunisia</li>
+                    <li><i class="fas fa-clock"></i> Every day, 7:00 to 21:00</li>
+                    <li><i class="fas fa-envelope"></i> safwenbenmabrouk@gmail.com</li>
+                </ul>
+            </div>
 
-            <form action="">
-                <h3>get in touch</h3>
-                <div class="inputbox">
-                    <span class="fas fa-user"></span>
-                    <input type="text" placeholder="name">
-                </div>
-                <div class="inputbox">
-                    <span class="fas fa-envelope"></span>
-                    <input type="email" placeholder="email">
-                </div>
-                <div class="inputbox">
-                    <span class="fas fa-phone"></span>
-                    <input type="number" placeholder="number">
-                </div>
-                <input type="submit" value="send now" class="btn">
+            <form action="" data-thanks="Thanks for your message! We'll get back to you within a day.">
+                <h3>Get in touch</h3>
+                <p>Questions, catering or a table for a group? Drop us a line.</p>
+                <div class="inputbox"><span class="fas fa-user"></span><input type="text" placeholder="Your name" required></div>
+                <div class="inputbox"><span class="fas fa-envelope"></span><input type="email" placeholder="Your email" required></div>
+                <div class="inputbox"><span class="fas fa-phone"></span><input type="number" placeholder="Phone number"></div>
+                <div class="inputbox area"><span class="fas fa-message"></span><textarea placeholder="How can we help?" rows="4"></textarea></div>
+                <input type="submit" value="Send message" class="btn">
+                <p class="thanks"></p>
             </form>
         </div>
     </section>
 
-    <!-- blogs section starts -->
-
+    <!-- blogs section -->
     <section class="blogs" id="blogs">
-        <h1 class="heading"> our <span>blogs</span> </h1>
+        <h1 class="heading"> From our <span>blog</span> </h1>
         <div class="box-container">
 
             <div class="box">
-                <div class="image">
-                    <img src="images/blogs-1.jpg" alt="" />
-                </div>
+                <div class="image"><img src="images/blogs-1.jpg" alt="" /></div>
                 <div class="content">
-                    <a href="#" class="title">tasty and refreshing coffee</a>
-                    <span>by SafOne / 2025</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" class="btn">read more</a>
+                    <span>By SafOne / 2025</span>
+                    <a href="#" class="title">Why fresh beans change everything</a>
+                    <p>Coffee starts losing its aroma within weeks of roasting. Here is how to buy it, store it and grind it so every cup tastes the way it should.</p>
+                    <a href="#" class="read">Read more <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-
             <div class="box">
-                <div class="image">
-                    <img src="images/blogs-2.jpg" alt="" />
-                </div>
+                <div class="image"><img src="images/blogs-2.jpg" alt="" /></div>
                 <div class="content">
-                    <a href="#" class="title">tasty and refreshing coffee</a>
-                    <span>by SafOne / 2025</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" class="btn">read more</a>
+                    <span>By SafOne / 2025</span>
+                    <a href="#" class="title">Espresso at home: five simple rules</a>
+                    <p>You don't need expensive gear. Grind size, water temperature and timing matter far more, and they are easy to get right.</p>
+                    <a href="#" class="read">Read more <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-
             <div class="box">
-                <div class="image">
-                    <img src="images/blogs-3.jpg" alt="" />
-                </div>
+                <div class="image"><img src="images/blogs-3.jpg" alt="" /></div>
                 <div class="content">
-                    <a href="#" class="title">tasty and refreshing coffee</a>
-                    <span>by SafOne / 2025</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" class="btn">read more</a>
+                    <span>By SafOne / 2025</span>
+                    <a href="#" class="title">Our favorite ways to enjoy a slow morning</a>
+                    <p>A good cup, a window seat and no rush. We share the small rituals that make the first hour of the day feel better.</p>
+                    <a href="#" class="read">Read more <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- footer section starts -->
-
-    <section class="footer">
-        <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-            <a href="#" class="fab fa-pinterest"></a>
+    <!-- newsletter / closing cta -->
+    <section class="newsletter">
+        <div class="box">
+            <h2>Join the Coffee Club.</h2>
+            <p>Get new blends, seasonal drinks and a free coffee on your birthday. One short email a month.</p>
+            <form action="" data-thanks="You're in! Check your inbox for a welcome gift.">
+                <input type="email" placeholder="Your email address" required>
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+            <p class="thanks"></p>
         </div>
-
-        <div class="links">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <a href="#products">products</a>
-            <a href="#review">review</a>
-            <a href="#contact">contact</a>
-            <a href="#blogs">blogs</a>
-        </div>
-
-        <div class="credit">created by <span>SafOne</span> | all rights reserved</div>
     </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="top">
+            <div class="brand">
+                <a href="#" class="logo" aria-label="CoffeeOne"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#c98a45"/><path d="M17 29h26v9a11 11 0 0 1-11 11h-4a11 11 0 0 1-11-11z" fill="#1c110b"/><path d="M43 32h2.5a5 5 0 0 1 0 10H42" fill="none" stroke="#1c110b" stroke-width="3" stroke-linecap="round"/><rect x="13" y="51" width="38" height="3.5" rx="1.75" fill="#1c110b"/><path d="M26 23c-2.4-3.2 2.4-5.2 0-8.5M34 23c-2.4-3.2 2.4-5.2 0-8.5" fill="none" stroke="#1c110b" stroke-width="2.8" stroke-linecap="round"/></svg><span>Coffee<b>One</b></span></a>
+                <p>Freshly roasted coffee, brewed to order. Come for the cup, stay for the slow morning.</p>
+            </div>
+
+            <div class="col">
+                <h4>Explore</h4>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#products">Shop</a>
+                <a href="#blogs">Blog</a>
+            </div>
+
+            <div class="col">
+                <h4>Opening hours</h4>
+                <span>Monday to Friday <b>7:00 to 21:00</b></span>
+                <span>Saturday and Sunday <b>8:00 to 22:00</b></span>
+            </div>
+
+            <div class="col">
+                <h4>Say hello</h4>
+                <a href="mailto:safwenbenmabrouk@gmail.com" class="keep">safwenbenmabrouk@gmail.com</a>
+                <span>Monastir, Tunisia</span>
+            </div>
+        </div>
+
+        <div class="word" aria-hidden="true">CoffeeOne</div>
+
+        <div class="bottom">
+            <div class="credit">Created by <span>SafOne</span> | All rights reserved</div>
+            <div class="share">
+                <a href="https://github.com/Safwen-bm" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Portfolio</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
